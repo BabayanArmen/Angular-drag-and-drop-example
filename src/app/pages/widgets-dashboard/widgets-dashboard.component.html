@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="header">
+        <button (click)="onAddCell()">Add Cell</button>
+    </div>
+    
+    <div id="root"></div>
+    
+    
+    <!-- ///////////////////////////// -->
+    <!-- <div id="div1" (drop)="drop($event)" (dragover)="allowDrop($event)">
+      <div draggable="true" (dragstart)="drag($event)" id="drag1">drag me</div>
+    </div>
+    <div id="div2" (drop)="drop($event)" (dragover)="allowDrop($event)"></div> -->
+    <!-- ///////////////////////////// -->
+    
+    
+    <!-- <div id="1" (contextmenu)="openContextMenu($event)" class="cell">
+        cell
+    </div> -->
+    
+    <div #context class="contextmenu" [ngStyle]="{'left.px': contextMenuX, 'top.px': contextMenuY}">
+        <p #newWidget (click)="onAddNewWidget()">new widget</p>
+    </div>
+</div>
+
+
+
+
+
+
